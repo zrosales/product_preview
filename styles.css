@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root{
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --monstse: 'Montserrat', sans-serif;
+    --fraunce: 'Fraunces', serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    background-color: var(--cream);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    width: 650px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card_img{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.card_info{
+    width: 50%;
+    height: 50%;
+    padding: 50px;
+}
+
+
+h2{
+    font-family: var(--monstse);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--dark-grayish-blue);
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-family: var(--fraunce);
+    font-weight: 700;
+    font-size: 34px;
+    color: --very-dark-blue;
+    margin-bottom: 20px;
+}
+
+.card_info p{
+    font-family: var(--monstse);
+    color: var(--dark-grayish-blue);
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.prices{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prices p:first-child{
+    font-family: var(--fraunce);
+    font-weight: 700;
+    color: var(--dark-cyan);
+    font-size: 34px;
+}
+
+.prices p:nth-child(2){
+    text-decoration: line-through;
+}
+
+.add_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    background-color: var(--dark-cyan);
+    text-decoration: none;
+    margin: auto;
+}
+
+.add_button div{
+    color: var(--white);
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-family: var(--monstse);
+}
+
+.add_button:hover{
+    background-color: var(--very-dark-blue);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        height: auto;
+    }
+
+    .card{
+        flex-direction: column;
+        width: 350px;
+        height: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .card_img{
+        width: auto;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+        background-image:url(assets/images/image-product-desktop.jpg);
+    }
+
+    .card_info{
+        width: auto;
+        height: auto;
+        padding: 25px 30px 0 30px;
+    }
+
+  }
