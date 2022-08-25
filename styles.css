@@ -36,10 +36,15 @@ html{
     border-radius: 10px;
 }
 
-.card_img{
+.card_picture{
     width: 50%;
     height: 100%;
     border-radius: 10px 0 0 10px;
+}
+
+.card_img{
+    width: 100%;
+    height: 100%;
 }
 
 .card_info{
@@ -139,12 +144,11 @@ h1{
         margin-bottom: 25px;
     }
 
-    .card_img{
+    .card_picture{
         width: auto;
         height: 280px;
         object-fit: cover;
         border-radius: 10px 10px 0 0;
-        background-image:url(assets/images/image-product-desktop.jpg);
     }
 
     .card_info{
